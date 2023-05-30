@@ -6,7 +6,7 @@
 .btn-green {
     width: 245px;
     height: 55px;
-    border: 0px solid;
+    border: 0 solid;
     border-image-source: none;
     border-image-source: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
     border-radius: 40px;
@@ -18,4 +18,10 @@
 }
 .fbtm {
     background: #6BFFCA;
+}
+.icons {
+    margin: 5px;
+}
+ul li {
+    list-style-type: none;
 }
