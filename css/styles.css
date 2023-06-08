@@ -25,3 +25,27 @@
 ul li {
     list-style-type: none;
 }
+header {
+    display: flex;
+    font-family: Tahoma, sans-serif;
+    font-size: 18px;
+    height: 110px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 61px;
+    height: 62px;
+}
+.menu {
+display: flex;
+}
+.menu li {
+    padding: 44px 20px;
+}
+.lang_btn {
+    border: none;
+    background-color: white;
+    font-size: 18px;
+}
+
