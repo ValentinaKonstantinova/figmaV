@@ -1,12 +1,23 @@
+body {
+    width: 1536px;
+    margin: 0 auto;
+}
+.wrapper {
+    background-color: #F3F6EF;
+    position: relative;
+}
 .people_img {
-    background: url("../image/people.png") 100% 100% no-repeat;
     height: 200px;
-    background-size: contain;
+    width: 721px;
+    position: absolute;
+    left: 720px;
+    top: -114px;
 }
 .btn-green {
     width: 245px;
     height: 55px;
     border: 0 solid;
+    margin: 25px 0;
     border-image-source: none;
     border-image-source: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
     border-radius: 40px;
@@ -25,27 +36,52 @@
 ul li {
     list-style-type: none;
 }
+.header_wrapper{
+    overflow: hidden;
+}
 header {
     display: flex;
+    background-color: #F3F7EF;
     font-family: Tahoma, sans-serif;
     font-size: 18px;
     height: 110px;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
+    box-shadow: 0 0 10px #00000070;
+    position: absolute;
 }
 .logo {
     width: 61px;
     height: 62px;
 }
 .menu {
-display: flex;
+    display: flex;
 }
 .menu li {
     padding: 44px 20px;
 }
 .lang_btn {
     border: none;
-    background-color: white;
+    background-color: #F3F7EF;
     font-size: 18px;
 }
-
+.block1 {
+    height: 833px;
+    position: relative;
+}
+.block1 div h1 {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 115%;
+}
+.block1 .block1-left {
+    position: absolute;
+    left: 149px;
+    top: 237px;
+}
+.block1-left {
+    width: 434px;
+}
