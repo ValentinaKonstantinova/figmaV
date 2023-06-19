@@ -5,6 +5,7 @@ body {
 .wrapper {
     background-color: #F3F6EF;
     position: relative;
+    overflow: hidden;
 }
 .people_img {
     height: 200px;
