@@ -51,6 +51,7 @@ header {
     align-items: center;
     box-shadow: 0 0 10px #00000070;
     position: absolute;
+    z-index: 1;
 }
 .logo {
     width: 61px;
