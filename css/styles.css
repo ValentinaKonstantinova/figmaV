@@ -156,6 +156,7 @@ body {
     overflow: hidden;
 }
 .people_img {
+    margin-top: 463px;
     height: 200px;
     width: 721px;
     position: absolute;
@@ -171,6 +172,9 @@ body {
     border-image-source: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
     border-radius: 40px;
     background-image: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
+}
+.block1_btn{
+    margin: 55px 0;
 }
 .bg4 {
     background: url("../image/bg.png") 100% 100% no-repeat;
@@ -250,4 +254,36 @@ header {
 }
 .block1-left {
     width: 434px;
+}
+
+/*Верстка по БЭМ*/
+.suitable{
+    background-color: #242029;
+    height: 594px;
+    margin-top: -80px;
+}
+.suitable_white{
+    color: #F3F7EF;
+}
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.suitable__title{
+    margin-top: 79px;
+    margin-left: 153px;
+}
+.button{
+    display: block;
+    width: 245px;
+    height: 55px;
+    border: 0 solid;
+    border-radius: 40px;
+    margin: 25px auto;
+}
+.button_green{
+    border-image-source: none;
+    border-image-source: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
+    background-image: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
 }
