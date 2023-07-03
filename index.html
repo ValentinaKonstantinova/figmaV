@@ -16,28 +16,26 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="header_wrapper">
-        <header>
-            <div>
-                <img class="logo" src="./image/logo_EdSpase.png" alt="logo">
-            </div>
-            <div>
-                <ul class="menu">
-                    <li>Возможности</li>
-                    <li>Стоимость</li>
-                    <li>Контакты</li>
-                </ul>
-            </div>
-            <div>
-                <select class="lang_btn">
-                    <option value="ru" selected="">RU</option>
-                    <option value="en">EN</option>
-                    <option value="es">ES</option>
-                    <option value="it">IT</option>
-                </select>
-            </div>
-        </header>
-    </div>
+    <header  class="header_wrapper" >
+        <div>
+            <img class="logo" src="./image/logo_EdSpase.png" alt="logo">
+        </div>
+        <div>
+            <ul class="menu">
+                <li>Возможности</li>
+                <li>Стоимость</li>
+                <li>Контакты</li>
+            </ul>
+        </div>
+        <div>
+            <select class="lang_btn">
+                <option value="ru" selected="">RU</option>
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+                <option value="it">IT</option>
+            </select>
+        </div>
+    </header>
     <main>
         <section class="block1">
             <div class="block1-left">
@@ -49,62 +47,69 @@
         </section>
         <section class="suitable suitable_white">
             <h2 class="suitable__title title">Точно подойдет для:</h2>
-            <div class="suitable__card-suitable card-suitable">
-                <div class="card-suitable__images-block images-block">
-                    <img class="images-block__img" src="./image/block3.png" alt="block">
+            <div class="suitable__card_wrapper">
+                <div class="suitable__card-suitable card-suitable">
+                    <div class="card-suitable__images-block images-block">
+                        <img class="images-block__img" src="./image/block3.png" alt="block">
+                    </div>
+                    <div class="card-suitable__card-text card_text">
+                        <h3 class="card_text__title card_text__title-left">Организации онлайн-курсов</h3>
+                        <p class="card_text__description card_text__description-left">Cоздайте свою программу обучения с нуля, самостоятельно управляйте учебным процессом в несколько кликов, круглосуточная поддержка.</p>
+                    </div>
                 </div>
-                <div class="card-suitable__card-text card_text">
-                    <h3 class="card_text__title">Организации онлайн-курсов</h3>
-                    <p class="card_text__description">Cоздайте свою программу обучения с нуля, самостоятельно управляйте учебным процессом в несколько кликов, круглосуточная поддержка.</p>
+                <div class="suitable__card-suitable card-suitable">
+                    <div class="card-suitable__images-block images-block">
+                        <img class="images-block__img" src="./image/block3-1.png" alt="block">
+                    </div>
+                    <div class="card-suitable__card-text card_text">
+                        <h3 class="card_text__title card_text__title-right">Создания корпоративного обучения</h3>
+                        <p class="card_text__description card_text__description-right">Поможем перенести корпоративную академию, базу знаний, учебные курсы, настроим систему мотивации обучения, круглосуточная поддержка.</p>
+                    </div>
                 </div>
             </div>
-            <div class="suitable__card-suitable card-suitable">
-                <div class="card-suitable__images-block images-block">
-                    <img class="images-block__img" src="./image/block3-1.png" alt="block">
-                </div>
-                <div class="card-suitable__card-text card_text">
-                    <h3 class="card_text__title">Создания корпоративного обучения</h3>
-                    <p class="card_text__description">Поможем перенести корпоративную академию, базу знаний, учебные курсы, настроим систему мотивации обучения, круглосуточная поддержка.</p>
-                </div>
-            </div>
-            <button class="suitable__try button button_green">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+
+            <button class="suitable__try suitable-green btn-green">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
         </section>
-        <section>
-            <h3>Возможности Ed Space</h3>
-            <p>Поможем перенести корпоративную академию, базу знаний, учебные курсы, настроим систему мотивации обучения, круглосуточная поддержка.</p>
-            <div>
-                <img src="./image/block4-1.png" alt="block">
-                <h3>Организация учебного процесса</h3>
-                <p>Управляйте процессом обучения. Наблюдайте за будущими, текущими и завершенными курсами в одном окне.</p>
+        <section class="possibility">
+            <h3 class="possibility__title">Возможности Ed Space</h3>
+            <p class="possibility__description">Поможем перенести корпоративную академию, базу знаний, учебные курсы, настроим систему мотивации обучения, круглосуточная поддержка.</p>
+            <div class="possibility__card_row">
+                <div class="possibility__card p_card">
+                    <img class="p_card__img" src="./image/block4-1.png" alt="block">
+                    <h3 class="p_card__title">Организация учебного процесса</h3>
+                    <p class="p_card__description">Управляйте процессом обучения. Наблюдайте за будущими, текущими и завершенными курсами в одном окне.</p>
+                </div>
+                <div class="possibility__card p_card">
+                    <img class="p_card__img" src="./image/block4-2.png" alt="block">
+                    <h3 class="p_card__title">Управление расписанием занятий</h3>
+                    <p class="p_card__description">Спланируйте расписание курсов самым удобным образом. Больше никаких накладок и переносов.</p>
+                </div>
+                <div class="possibility__card p_card p_card-clicked">
+                    <img class="p_card__img" src="./image/block4-3.png" alt="block">
+                    <h3 class="p_card__title">Администрирование домашних заданий</h3>
+                    <p class="p_card__description">Отслеживайте прогресс обучения индивидуально по каждому ученику.</p>
+                </div>
             </div>
-            <div>
-                <img src="./image/block4-2.png" alt="block">
-                <h3>Управление расписанием занятий</h3>
-                <p>Спланируйте расписание курсов самым удобным образом. Больше никаких накладок и переносов.</p>
+            <div class="possibility__card_row">
+                <div class="possibility__card p_card">
+                    <img class="p_card__img" src="./image/block4-4.png" alt="block">
+                    <h3 class="p_card__title">Задания для учеников</h3>
+                    <p class="p_card__description">Каждый ученик может видеть домашние задания от преподавателя, отслеживать статус их проверки и собственный уровень прогресса в обучении.</p>
+                </div>
+                <div class="possibility__card p_card">
+                    <img class="p_card__img" src="./image/block4-5.png" alt="block">
+                    <h3 class="p_card__title">Мониторинг посещения занятий</h3>
+                    <p class="p_card__description">Просматривайте посещаемость каждого ученика на курсе. Отстающих больше не будет.</p>
+                </div>
+                <div class="possibility__card p_card p_card-upped">
+                    <img class="p_card__img" src="./image/block4-6.png" alt="block">
+                    <h3 class="p_card__title">Записи хранятся на платформе</h3>
+                    <p class="p_card__description">Спланируйте расписание курсов самым удобным образом. Больше никаких накладок и переносов.</p>
+                </div>
             </div>
-            <div>
-                <img src="./image/block4-3.png" alt="block">
-                <h3>Администрирование домашних заданий</h3>
-                <p>Отслеживайте прогресс обучения индивидуально по каждому ученику.</p>
-            </div>
-            <div>
-                <img src="./image/block4-4.png" alt="block">
-                <h3>Задания для учеников</h3>
-                <p>Каждый ученик может видеть домашние задания от преподавателя, отслеживать статус их проверки и собственный уровень прогресса в обучении.</p>
-            </div>
-            <div>
-                <img src="./image/block4-5.png" alt="block">
-                <h3>Мониторинг посещения занятий</h3>
-                <p>Просматривайте посещаемость каждого ученика на курсе. Отстающих больше не будет.</p>
-            </div>
-            <div>
-                <img src="./image/block4-6.png" alt="block">
-                <h3>Записи хранятся на платформе</h3>
-                <p>Спланируйте расписание курсов самым удобным образом. Больше никаких накладок и переносов.</p>
-            </div>
-            <button class="btn-green">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+            <button class="possibility__button btn-green">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
         </section>
-        <section class="bg4">
+        <section class="bg4" style="display: none">
             <h3>Выбирайте Ed Space сегодня и вы получите</h3>
             <div>
                 <ul>
@@ -142,7 +147,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <div class="bals">
+        <div class="balls__ball ball-blue"></div>
+        <div class="balls__ball ball-blue_big"></div>
+        <div class="balls__ball ball-purpure"></div>
+    </div>
+    <footer  style="display: none">
         <div>
             <div><img src="./image/logo_EdSpase.png" alt="logo"></div>
             <div>
