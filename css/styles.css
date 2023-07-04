@@ -194,7 +194,7 @@ header {
     padding: 44px 20px;
     list-style-type: none;
 }
-.lang_btn {
+.lang-btn {
     border: none;
     background-color: #F3F7EF;
     font-size: 18px;
@@ -236,16 +236,17 @@ header {
     font-size: 21px;
     margin-top: 31px;
 }
-.block1_btn{
+.block1-btn{
     margin-top: 55px;
     margin-bottom: 97px;
 }
-.people_img {
+.people-img {
     height: 375px;
     width: 721px;
     position: absolute;
     right: 95px;
     top: 297px;
+    z-index: 1;
 }
 
 /*Верстка по БЭМ*/
@@ -267,7 +268,7 @@ header {
 .suitable__title{
     font-size: 40px;
 }
-.suitable__card_wrapper{
+.suitable__card-wrapper{
     margin-top: 82px;
     width: 100%;
     display: flex;
@@ -286,27 +287,27 @@ header {
 .images-block__img{
     width: 120px;
 }
-.card_text{
+.card-text{
     padding-right: 25px;
 
 }
-.card_text > .card_text__title{
+.card-text > .card-text__title{
     width: 315px;
     font-size: 24px;
 }
-.card_text__description{
+.card-text__description{
     font-size: 14px;
 }
-.card_text__description-left{
+.card-text__description-left{
     width: 220px;
 }
-.card_text__description-right{
+.card-text__description-right{
     width: 240px;
 }
-.card_text__title-left{
+.card-text__title-left{
     padding-bottom: 24px;
 }
-.card_text__title-right{
+.card-text__title-right{
     padding-bottom: 14px;
 }
 .suitable-green{
@@ -338,14 +339,16 @@ header {
     font-style: italic;
     font-weight: 100;
     line-height: 120%;
+    z-index: 1;
+    position: relative;
 }
-.possibility__card_row{
+.possibility__card-row{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.possibility .p_card{
+.possibility .p-card{
     width: 388px;
     height: 317px;
     border-radius: 10px;
@@ -361,17 +364,17 @@ header {
     justify-content: space-around;
     z-index: 1;
 }
-.p_card__img{
+.p-card__img{
     display:block;
 }
-.p_card-clicked{
+.p-card-clicked{
     box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.04), 11px 6px 48px 4px #36FF9F !important;
 }
-.p_card-upped{
+.p-card-upped{
     background: linear-gradient(134deg, #FFF 0%, rgba(243, 246, 239, 0.00) 89.58%) !important;
     backdrop-filter: blur(5.5px);
  }
-.p_card__title{
+.p-card__title{
     color: #2F2A37;
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
@@ -380,7 +383,7 @@ header {
     line-height: 120%;
     display:block;
 }
-p_card__description{
+p-card__description{
     color: #2F2A37;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -392,8 +395,8 @@ p_card__description{
 .possibility__button{
     display: block;
     margin: 53px auto 0 auto;
-    position: relative;
     z-index: 1;
+    position: relative;
 }
 /*block-possibility-end*/
 
@@ -402,33 +405,33 @@ p_card__description{
     position: absolute;
     background-repeat: no-repeat;
 }
-.ball-blue{
+.balls__ball_blue{
     top: 77px;
     width: 821px;
     height: 821px;
-    right: -150px;
+    right: -300px;
     opacity: 0.7;
     border-radius: 821px;
     background: #6BFFCA;
     filter: blur(120px);
 }
-.ball-blue_big{
+.balls__ball_blue-big{
     width: 1056px;
     height: 1021px;
     border-radius: 1056px;
     background: #6BFFCA;
     top: 1086px;
-    left: -150px;
+    left: -500px;
     opacity: 0.7;
     filter: blur(206px);
 }
-.ball-purpure{
-    top: 1601px;
+.balls__ball_purpure{
+    top: 1800px;
     border-radius: 1251px;
     background: #9E00FF;
     width: 1251px;
     height: 1210px;
-    right: -150px;
+    right: -500px;
     opacity: 0.7;
     filter: blur(182.5px);
 
