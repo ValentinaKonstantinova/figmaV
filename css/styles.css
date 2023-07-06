@@ -190,6 +190,21 @@ header {
 .menu {
     display: flex;
 }
+.lang-burger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.hamburger-menu {
+    display: none;
+    margin: auto 5px;
+}
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
 .menu li {
     padding: 44px 20px;
     list-style-type: none;
@@ -328,6 +343,8 @@ header {
     font-style: normal;
     font-weight: 900;
     line-height: 115%;
+    z-index: 1;
+    position: relative;
 }
 .possibility__description{
     margin: 23px auto 84px auto;
@@ -450,3 +467,133 @@ p-card__description{
     margin: 5px;
 }
 /*footer-end*/
+
+
+/*Медиа запросы!*/
+/*Устройства с разрешением менее 1920px*/
+@media (max-width: 1920px) {
+    .wrapper {
+        width: 1024px;
+        /*background-color: gold;*/
+    }
+
+    .block1-left {
+        left: 50px;
+    }
+    .people-img {
+        width: 500px;
+        right: 50px;
+        top: 350px;
+    }
+    .people-img img{
+        width: 500px;
+    }
+
+    .suitable {
+        padding: 79px 50px 0 50px;
+    }
+
+    .possibility {
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .possibility .p-card {
+        width: 280px;
+        height: 280px;
+        padding: 20px;
+    }
+}
+
+/*Устройства с разрешением менее 992px*/
+@media (max-width: 992px) {
+    .wrapper {
+        width: 100%;
+        /*background-color: green;*/
+    }
+    .menu, .balls, .people-img{
+        display: none;
+    }
+    header{
+        position: relative;
+    }
+
+    .lang-btn {
+        border: none;
+        background-color: #F3F7EF;
+        font-size: 21px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+
+    .block1{
+        position: relative;
+        height: 550px;
+    }
+    .block1-left{
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+    }
+    .suitable {
+        margin: 0;
+        padding: 25px 0;
+    }
+    .suitable__title {
+        text-align: center;
+    }
+    .suitable__card-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .suitable-green {
+        margin-top: 15px;
+    }
+    .possibility {
+        margin: 0 auto;
+        padding: 25px 20px;
+    }
+    .possibility__card-row {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .possibility .p-card {
+        margin: 20px;
+    }
+}
+
+/*Устройства с разрешением менее 768px*/
+@media (max-width: 550px) and (min-width: 360px) {
+    .wrapper {
+        width: 100%;
+    }
+    .block1-left {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .block1-left h1{
+        font-size: 2rem !important;
+    }
+    .suitable{
+        width: 96%;
+        padding: 60px 5px;
+        height: 700px;
+    }
+    .card-suitable {
+        width: 500px;
+        height: 244px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .possibility__description {
+        margin: 23px auto 10px auto;
+        width: 284px;
+    }
+}
+
